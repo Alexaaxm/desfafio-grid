@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header {
+  background-color: #df68b8;
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h4 {
+  margin: 0;
+  color: #fff;
+}
+.main-container .category {
+  background-color: #f9eef7;
+  grid-area: category;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .category li {
+  list-style: none;
+  padding-bottom: 12px;
+}
+.main-container .category ul {
+  padding: 0;
+}
+
+main.product-container .product-item {
+  background-color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+main.product-container .product-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+main.product-container .product-item .container-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px;
+}
+main.product-container .product-item .container-text h2 {
+  margin: 0;
+}
+main.product-container .product-item .container-text p {
+  margin: 0;
+  padding-top: 12px;
+}
+
+main.product-container .product-item button {
+  background-color: #df68b8;
+  padding: 16px;
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+main.product-container .product-item button:hover {
+  opacity: 0.8;
+}
+main.product-container {
+  background-color: #f9eef7;
+  grid-area: product;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer {
+  background-color: #fff;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #b3287a;
+  text-decoration: none;
+}
+.main-container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 16% 28% 28% 28%;
+  grid-template-areas:
+    "nav nav nav nav"
+    "category product product product"
+    "category product product product"
+    "category product product product"
+    "footer footer footer footer";
+}
+.main-container .box {
+  padding: 18px;
+}
